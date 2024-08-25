@@ -1,7 +1,14 @@
+### Files Identification:
+**Project Roadmap:** contains the steps involved in the project _(project_roadmap.docx)_
+**Project File (.pbix):** the actual project and report _(capstone.pbix)_
+**Dataset:** dataset used in this project _(bank loan.xlsx)_
+**Documentation:** the overview of the project _(README.md)_
+
+
 # **Bank Loan Performance Analysis :**
 ![image](https://github.com/user-attachments/assets/cced70ed-0807-4d30-bc8d-80c7f6755a74)
 ## Introduction:
-&nbsp;&nbsp;&nbsp;&nbsp;I was assigned to a dataset of Banking domain which is large in size and that got me into the workplace of PowerBi straight away. And here I am showcasing the overview of what i have done with it.
+&nbsp;&nbsp;&nbsp;&nbsp;I was assigned to a dataset of Banking domain which is large in size and that got me into the workplace of PowerBi straight away. And here I am showcasing the overview of what i have done with it.<br>
 [_Click here to download my Project (.pbix file)_](https://drive.google.com/file/d/1J0-SUvff1F_4yOtcZRDWlvQQBYuamO0y/view?usp=sharing)
 ### Skills Demonstrated:
 * **Transformation**: Dealing with missing values and inconsistancies, Formatting to the right type, getting the data familiar
