@@ -43,8 +43,10 @@
 ## Data Analysis and Visuals:
 ### Report 1: Loan Performance Analysis
 ![image](https://github.com/user-attachments/assets/76784711-4c70-431e-807d-7b55a3ec91cd)
+
 ### Report 2: Borrower Profile Analysis
 ![image](https://github.com/user-attachments/assets/ac1e7b58-2094-419b-bb01-355a1f0292d4)
+
 ### Summary Page: 
 ![image](https://github.com/user-attachments/assets/3acfa8fd-236c-4055-ae9c-e087d6aaed17)
 
