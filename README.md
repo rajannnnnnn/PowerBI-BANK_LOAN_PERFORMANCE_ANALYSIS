@@ -1,8 +1,8 @@
 ### Files Identification:
-**Project Roadmap:** contains the steps involved in the project _(project_roadmap.docx)_
-**Project File (.pbix):** the actual project and report _(capstone.pbix)_
-**Dataset:** dataset used in this project _(bank loan.xlsx)_
-**Documentation:** the overview of the project _(README.md)_
+**Project Roadmap:** contains the steps involved in the project _(project_roadmap.docx)_<br>
+**Project File (.pbix):** the actual project and report _(capstone.pbix)_<br>
+**Dataset:** dataset used in this project _(bank loan.xlsx)_<br>
+**Documentation:** the overview of the project _(README.md)_<br>
 
 
 # **Bank Loan Performance Analysis :**
