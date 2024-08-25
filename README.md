@@ -1,9 +1,8 @@
-Data Source: https://drive.google.com/uc?export=download&id=1yNL9gfv-DlD3cEW9o2GJvtJ9Bzbm37R7 <br/>
-PBIX file : 
 # **Bank Loan Performance Analysis :**
 ![unnamed](https://github.com/user-attachments/assets/3807189e-beaa-481e-833e-1e9bf34c4199)
 ## Introduction:
 &nbsp;&nbsp;&nbsp;&nbsp;I was assigned to a dataset of Banking domain which is large in size and that got me into the workplace of PowerBi straight away. And here I am showcasing the overview of what i have done with it.
+[_Click here to download my Project (.pbix file)_](https://drive.google.com/file/d/1J0-SUvff1F_4yOtcZRDWlvQQBYuamO0y/view?usp=sharing)
 ### Skills Demonstrated:
 * **Transformation**: Dealing with missing values and inconsistancies, Formatting to the right type, getting the data familiar
 * **DAX**: Calculated Columns, Measures, Calculated Tables
@@ -20,41 +19,31 @@ PBIX file :
   * Borrower Profile Analysis
   * Summary Page
 ## Data Sourcing:
-**DataSet**: [_Global Terrorism_](https://drive.google.com/file/d/1J0-SUvff1F_4yOtcZRDWlvQQBYuamO0y/view?usp=sharing)<br>
+**DataSet**: [_Global Terrorism_](https://drive.google.com/uc?export=download&id=1yNL9gfv-DlD3cEW9o2GJvtJ9Bzbm37R7)<br>
 &nbsp;&nbsp;&nbsp;&nbsp;The Excel file contained 22 columns and 466,286 rows of total (60mb). It contained Loan Details and Borrower Details.
 ![Screenshot (134)](https://github.com/user-attachments/assets/cec01280-c6ef-4530-8181-4bc1d1481425)
 ![Screenshot (135)](https://github.com/user-attachments/assets/70d6a79c-bafa-4fe8-84a6-3109f6c8175d)
 ## Data Transformation/Cleaning:
-&nbsp;&nbsp;&nbsp;&nbsp;The data is first splitted for the sake of snowflake schema and to make it scalable, then further transformation took place including
-* Making the **column multiples into single column** on gangs, weapons, attacktypes and also its sub-categories
-* **Removing the columns** that is not necessary for analysis _**eg**. written notes, explaing the events_
+&nbsp;&nbsp;&nbsp;&nbsp;The data is first explored for all kind of inconsistancies and cleansed properly, those include
+* **Creating custom columns** BorrowerDetails[total_amount_paid], BorrowerDetails[delinquency_status]
+* **Removing the columns** that is not necessary for analysis _**eg**. LoanDetials[subgrade]_
 * **Replacing** Numeric values with understandable replacements _**eg**. replacing -9,-99 with 'Unknown'_
-* **Making Bridge tables** for colums with multiple entries _**eg**. multiple weapon types can be used in one event_
-* **Appropriating Data Types** on columns of Date, Binary, Currency
-* **Appending and Removing Duplicates** which happens while spliting the data
+* **Dealing with inconsistancies** texture incosistancies _**eg**. LoanDetails[purpose]_
+* **Appropriating Data Types** on columns of Date, Binary, Currency  _**eg**. BorrowerDetials[total_pymnt]_
+* **Removing Duplicates** duplicates found in LoanDetails[id]
 ## Data Analysis Expression & Data Heirarchies:
 * **Calculated Columns**:
-  * _'NoOf days to Execute'_ which is the date difference between _'Resolution Date'(if available)_ and _'Date of Event'_
-  * _'Gang Label'_ to know the gang is recogniced or Unknown
-  * _'NoOf SubGangs'_ each gang has
+  * _'remaining_installments'_ which Out Principal by Installment
 * **Measures**:
-  * _'Success Rate of Attack Type'_: Percentage of Success of each type of Attack
-  * _'International Support %'_: Percentage of International Support gained
-* **Calculated Tables:**
-  * _"Gang Summary"_: Details of each gang including their, success and failures, kills and wounds, kidnapping and ransom, etc
-* **Data Hierarchies**:
-  * Date Hierarchy: which is made automatic in nature for _'Event Date', 'Resolution Date'_
-  * Gang Hierarchy: _'Gang Name', 'Gang SubName'_
-  * Target Hierarchy: _'Target', 'Target Subtype'_
-  * Weapon Hierarchy: _'Weapon Type', 'Weapon Subtype'_
-  * Location Hierarchy: _'country', 'region', 'prov_state', 'city'_
+  * _'Fully Paid Loan Percentage'_: Percentage of Loan which is paid and closed
+  * _'Non-Verified Borrowers Count'_: Count of borrowers who is not yet verified
 ## Data Modeling:
-&nbsp;&nbsp;&nbsp;&nbsp;Since I prepared everything for SnowFlake Schema, I made relationship with fact table to all related queries with _'eventid'_. Its finally 21 queries, and here how it looks like
-![Screenshot (125)](https://github.com/user-attachments/assets/9ef129b2-bf24-4364-b1df-c78664d43f55)
+&nbsp;&nbsp;&nbsp;&nbsp; Nothing complex with modeling here, its just 2 queries and there exist a many-to-one relationship with the common column names _'loan_id'_.
+![image](https://github.com/user-attachments/assets/001f33da-6791-4aff-ac0e-2f418d41b795)
 ## Data Analysis and Visuals:
-![Screenshot (122)](https://github.com/user-attachments/assets/53893094-8737-4e78-8151-15afcd69bbe2)
-![Screenshot (124)](https://github.com/user-attachments/assets/21084f23-790f-4420-ac5a-25f6b6ce8972)
-![Screenshot (127)](https://github.com/user-attachments/assets/5df7afcc-ed99-467a-b108-143b26edffa4)
+![image](https://github.com/user-attachments/assets/76784711-4c70-431e-807d-7b55a3ec91cd)
+![image](https://github.com/user-attachments/assets/ac1e7b58-2094-419b-bb01-355a1f0292d4)
+![image](https://github.com/user-attachments/assets/3acfa8fd-236c-4055-ae9c-e087d6aaed17)
 
 ## Conclusion:
-&nbsp;&nbsp;&nbsp;&nbsp;Its clear as the visuals shows the terrorisms and its features
+&nbsp;&nbsp;&nbsp;&nbsp;Its clear as the visuals shows the Borrower Profile and Loan Performance Analysis outcomes
