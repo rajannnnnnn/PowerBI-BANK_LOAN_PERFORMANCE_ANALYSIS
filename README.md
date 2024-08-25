@@ -1,38 +1,29 @@
 Data Source: https://drive.google.com/uc?export=download&id=1yNL9gfv-DlD3cEW9o2GJvtJ9Bzbm37R7 <br/>
-PBIX file : https://drive.google.com/file/d/1J0-SUvff1F_4yOtcZRDWlvQQBYuamO0y/view?usp=sharing
+PBIX file : 
 # **Bank Loan Performance Analysis :**
 ![unnamed](https://github.com/user-attachments/assets/3807189e-beaa-481e-833e-1e9bf34c4199)
 ## Introduction:
-&nbsp;&nbsp;&nbsp;&nbsp;I found a really wonderfull dataset on Internet which got me into the workplace of PowerBi straight away. And here I am showcasing the overview of what i have done with it.
+&nbsp;&nbsp;&nbsp;&nbsp;I was assigned to a dataset of Banking domain which is large in size and that got me into the workplace of PowerBi straight away. And here I am showcasing the overview of what i have done with it.
 ### Skills Demonstrated:
-* **Transformation**: Splitting into queries, Cleaning
+* **Transformation**: Dealing with missing values and inconsistancies, Formatting to the right type, getting the data familiar
 * **DAX**: Calculated Columns, Measures, Calculated Tables
-* **Modeling**: SnowFlake Schema
+* **Modeling**: Star Schema
 * **Report Making**: Visuals, Slicers, Bookmarks
 ## Problem Statement:
 &nbsp;&nbsp;&nbsp;&nbsp;Given the data, here are the problems to consider
 
-* Split the data to optimize performance
-* Transform it, to make it fit to analyse
-* Define a SnowFlake Schema
+* Load the Dataset
+* Transform it, make it cleansed
+* Make a Relationship and create Measures and Columns
 * Create Report for these on your own custom:
-  * Loss Over Time
-  * Gang Summary
-  * Attacks and Targets
+  * Loan Performance Analysis
+  * Borrower Profile Analysis
+  * Summary Page
 ## Data Sourcing:
-**DataSet**: [_Global Terrorism_](https://www.kaggle.com/datasets/START-UMD/gtd)<br>
-&nbsp;&nbsp;&nbsp;&nbsp;The CSV file contained 113 columns and 181629 rows of single sheet (155mb). It contained every terrorisms happened between the year 1970 and 2017, giving informations about the
-  
-  - pepetrators
-  - gangs involved
-  - targets
-  - kills and wounds
-  - kidnappings and releases
-  - weapons
-  - ransom demanded
-  - locations
-  - properties affected
-  - internatinal supports
+**DataSet**: [_Global Terrorism_](https://drive.google.com/file/d/1J0-SUvff1F_4yOtcZRDWlvQQBYuamO0y/view?usp=sharing)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;The Excel file contained 22 columns and 466,286 rows of total (60mb). It contained Loan Details and Borrower Details.
+![Screenshot (134)](https://github.com/user-attachments/assets/cec01280-c6ef-4530-8181-4bc1d1481425)
+![Screenshot (135)](https://github.com/user-attachments/assets/70d6a79c-bafa-4fe8-84a6-3109f6c8175d)
 ## Data Transformation/Cleaning:
 &nbsp;&nbsp;&nbsp;&nbsp;The data is first splitted for the sake of snowflake schema and to make it scalable, then further transformation took place including
 * Making the **column multiples into single column** on gangs, weapons, attacktypes and also its sub-categories
