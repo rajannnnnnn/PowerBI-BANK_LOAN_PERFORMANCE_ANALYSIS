@@ -41,11 +41,11 @@
 &nbsp;&nbsp;&nbsp;&nbsp; Nothing complex with modeling here, its just 2 queries and there exist a many-to-one relationship with the common column names _'loan_id'_.
 ![image](https://github.com/user-attachments/assets/001f33da-6791-4aff-ac0e-2f418d41b795)
 ## Data Analysis and Visuals:
-Report 1: Loan Performance Analysis
+### Report 1: Loan Performance Analysis
 ![image](https://github.com/user-attachments/assets/76784711-4c70-431e-807d-7b55a3ec91cd)
-Report 1: Loan Performance Analysis
+### Report 2: Borrower Profile Analysis
 ![image](https://github.com/user-attachments/assets/ac1e7b58-2094-419b-bb01-355a1f0292d4)
-Summary Page: 
+### Summary Page: 
 ![image](https://github.com/user-attachments/assets/3acfa8fd-236c-4055-ae9c-e087d6aaed17)
 
 ## Conclusion:
