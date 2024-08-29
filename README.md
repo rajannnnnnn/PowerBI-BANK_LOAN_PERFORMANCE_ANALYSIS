@@ -38,7 +38,7 @@
 * **Dealing with inconsistancies** texture incosistancies _**eg**. LoanDetails[purpose]_
 * **Appropriating Data Types** on columns of Date, Binary, Currency  _**eg**. BorrowerDetials[total_pymnt]_
 * **Removing Duplicates** duplicates found in LoanDetails[id]
-## Data Analysis Expression & Data Heirarchies:
+## Data Analysis Expression :
 * **Calculated Columns**:
   * _'remaining_installments'_ which Out Principal by Installment
 * **Measures**:
